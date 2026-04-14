@@ -1,4 +1,6 @@
 #Aividade01: 4 notas por aluno e calcular a média
+import time
+import os
 def calc_med(y):
     med_list = []
     for i in range(y):
@@ -18,11 +20,12 @@ def calc_med(y):
         med_list.append(med)
     for q in range(qnt_alunos):
         print('')
-        print(f'Média do {i+1}º aluno: {med_list[i]}')
+        print(f'Média do {q+1}º aluno: {med_list[q]}')
 
 while True:
         try:
             qnt_alunos = int(input('Informe a quantidade de alunos: '))
+            os.system('cls')
             break
         except ValueError:
             print('\nERRO. Informe um número inteiro')
