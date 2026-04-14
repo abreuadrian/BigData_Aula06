@@ -33,3 +33,5 @@ def ex04 ():
             print(f'Valor [{n}] somado ✅') 
         else: print(f'Valor [{n}] não computado ❌')
     print(total)
+
+#Ex05: while
