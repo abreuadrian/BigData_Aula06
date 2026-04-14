@@ -22,6 +22,14 @@ def ex03():
         num = float(input('Informe o valor de n: '))
         x += num
     print(f'O total é {x}')
-ex03()
 
-
+#Ex04: soma valores >= 100
+def ex04 ():
+    total = 0
+    for i in range(5):
+        n = int(input('Informe um número: '))
+        if n >= 100:
+            total += n
+            print(f'Valor [{n}] somado ✅') 
+        else: print(f'Valor [{n}] não computado ❌')
+    print(total)
