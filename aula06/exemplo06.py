@@ -1,4 +1,4 @@
-#Ex01: Estrutura de repetição (for e while)
+#Ex01: Estrutura de repetição: (for)
 def ex01():
     start = int(input('Informe o número de inicio: '))      
     finish = int(input('Informe o número final: '))         
@@ -34,4 +34,40 @@ def ex04 ():
         else: print(f'Valor [{n}] não computado ❌')
     print(total)
 
-#Ex05: while
+#Ex05: Estrutura de repetição: (while)
+def ex05():
+    password = '0000'
+    leitura = ''
+
+    while password != leitura:
+        leitura = input('Digite sua senha: ')
+        if leitura == password:
+            print('Acesso liberado')
+        else:
+            print('Senha Incorreta. Tente novamente.')
+
+#Ex06: Números até 10
+def ex06():
+    i = 1
+    while i <= 10:
+        print(i)
+        i += 1
+
+#Ex07: soma com opção para parar 
+def ex07():
+    n = 1
+    soma = 0 
+    while n != 0:
+        n = int(input('Digite um número (0 para parar): '))
+        soma += n 
+    print(f'\nSoma total foi {soma}')
+
+#Ex08: 
+def ex08():
+    res = 's'
+    soma = 0
+    while res != 'n':
+        n = int(input('Informe um número: '))    
+        soma += n
+        res = input('Deseja continuar (s/n): ').lower().strip()
+    print(f'\n A soma total foi {soma}')
