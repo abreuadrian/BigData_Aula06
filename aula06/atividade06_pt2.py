@@ -25,7 +25,7 @@ while opt != 'n':
     os.system('cls')
     opt = input('Deseja continuar? (s/n): ').lower().strip()
     while opt != 's' and opt != 'n':
-        opt = input('Respostá inválida. Digite [s] para sim ou [n] para não: ')
+        opt = input('Resposta inválida. Digite [s] para sim ou [n] para não: ')
         time.sleep(0.5)
         os.system('cls')
 
