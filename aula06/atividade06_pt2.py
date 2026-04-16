@@ -10,8 +10,6 @@ while opt != 'n':
             break
         except ValueError:
             print('ERRO. Informe o valor da venda.')
-            time.sleep(1)
-            os.system('cls')
     if venda > 1000:
         desconto = venda * 0.10
         desconto_total += desconto
